@@ -329,7 +329,7 @@
 }
 
 /*-------about-------*/
-aboutme{
+.about{
   width: 100%;
 }
 
@@ -344,6 +344,7 @@ aboutme{
   margin-right: 10rem;
   color: #ffa700;
   font-weight: 600;
+  font-size: 4rem;
 }
 
 .about .about__text p{
@@ -418,7 +419,8 @@ aboutme{
 @media screen and (max-width:500px){
   .hm-services .hm-services__wrapper{
     grid-template-columns: 1fr;
-    row-gap: 8rem;
+    row-gap: 12rem;
+
   }
 
 }
