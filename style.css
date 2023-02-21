@@ -135,6 +135,9 @@
 .header{
     background: #2b2b2b;
     padding: 2rem 0;
+    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 .header .branding img{
@@ -189,6 +192,7 @@
     display: block;
     margin-bottom: .5rem;
     border-radius: 5rem;
+    transition: .5s ease;
 }
 /*--mobile--*/
 @media screen and (max-width:500px){
@@ -200,20 +204,180 @@
     position: absolute;
     background:#ffffff;
     top: 9.5rem;
-    left: 0;
+    right: -100rem;
     width: 100%;
     height: 100vh;
+    transition: .5s ease;
    }
+
+   .toggle__menu.open span:first-child{
+    transform: translate(0, 9px) rotate(225deg);
+    transition: .5s ease;
+   }
+   .toggle__menu.open span:nth-child(2){
+    opacity: 0;
+    transition: .5s ease;
+   }
+    .toggle__menu.open span:last-child{
+      transform: translate(0, -7px)rotate(-225deg);
+      transition: .5s ease;
+    }
    .header .header__nav ul{
     display: block;
     text-align: center;
    }
    .header .header__nav ul li{
     margin-left: 0;
+    border-bottom: 1px solid #2b2b2b;
    
    }
    .header .header__nav ul li a{
     color: #2b2b2b;
 
    }
+    .header .header__nav ul li:hover{
+      background: hsl(0, 0%, 50%) ;
+    }
+    .header__nav.open{
+      right: 0;
+      transition: .5s ease;
+    }
+}
+
+/*----banner--------*/
+.banner{
+  background: #ffffff;
+  padding: 5rem 0;
+  padding-top: 15rem;
+
+}
+
+.banner .banner__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .banner__text{
+  margin: 10rem;
+}
+
+.banner .banner__text h1{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 800;
+  max-width: 25rem;
+  line-height: 1.2;
+}
+
+.banner .banner__text p{
+  max-width: 40rem;
+  text-align: justify;
+  margin: 3rem 0;
+}
+
+.banner a#banner__btn{
+  text-transform: uppercase;
+  border: 1px solid !important;
+}
+
+@media screen and (max-width:500px){
+  .banner .banner__wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .banner img{
+    margin-left: 0;
+    width: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  .banner .banner__text{
+    text-align: center;
+    margin: 0;
+  }
+  .banner .banner__text h1{
+    max-width: fit-content;
+    font-size: 3rem;
+    margin: 0 auto;
+  }
+}
+
+/*------------repeatable patterns------------*/
+
+.btn{
+  padding: 1.2rem 1.5rem;
+  border-radius: 5rem;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+.bg--yellow{
+  background: #ffa700;
+  color: #ffffff;
+
+}
+.bg--yellow:hover{
+  background: #2b2b2b;
+  border: 1px solid #ffa700;
+}
+
+
+.bg--dark{
+  background: #2b2b2b;
+  color: #ffffff;
+}
+
+/*-------about-------*/
+aboutme{
+  width: 100%;
+}
+
+.about .about__wrapper{
+  display: flex;
+  place-content: center;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.about .about__text h3{
+  margin-right: 10rem;
+  color: #ffa700;
+  font-weight: 600;
+}
+
+.about .about__text p{
+  max-width: 40rem;
+  text-align: justify;
+  margin: 3rem 0;
+}
+
+.about .elp{
+  position: relative;
+
+}
+
+  .about .elp .pic{
+      position: absolute;
+
+      opacity: .5;
+  }
+
+  .about .elp .pic2{
+    position: relative;
+
+}
+
+@media screen and (max-width:500px){
+  .about .about__wrapper{
+      flex-direction: column;
+  }
+  .about img{
+      margin-left: 0;
+      width: 20rem;
+      margin-bottom: 3rem;
+  }
+.about .about__text h3{
+      text-align: center;
+      margin: 0 auto;
+  }
 }
