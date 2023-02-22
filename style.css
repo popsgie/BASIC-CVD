@@ -338,6 +338,7 @@
   place-content: center;
   place-items: center;
   justify-content: space-evenly;
+  padding-top: 6rem;
 }
 
 .about .about__text h3{
@@ -423,4 +424,288 @@
 
   }
 
+}
+/*--------latest trends----------*/
+.trends {
+  background: #2b2b2b;
+  padding: 10rem 0 5rem;
+}
+
+
+.trends .trends__card {
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+.trends .trends__card .trends__card_text {
+  margin: 0 2rem;
+}
+
+.trends .trends__card .trends__card_text h4 {
+  color: #ffa700;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.trends .trends__card .trends__card_text p {
+  color: #2b2b2b;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.trends .trends__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.trends .trends__text h2 {
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.trends .trends__text p {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+
+.trends .trends__card img{
+  width: 100%;
+}
+
+.trends .trends__card_text a {
+  color: #ffa700;
+}
+
+@media screen and (max-width:560px){
+  .trends .trends__wrapper{
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .trends .trends__wrapper .trends__card{
+    margin: 0 6rem;
+  }
+  .trends .trends__text {
+    text-align: center;
+  }
+  .trends .trends__text h2 {
+    font-size: 4rem;
+  }
+  .trends .trends__text p {
+    font-size: 1.5rem;
+  }
+}
+
+/*-------contract---------*/
+.contact{
+  background: #ffa700;
+  padding: 5rem 0;
+}
+
+.contact .contact__wrapper{
+  text-align: center;
+}
+
+.contact .contact__wrapper h4{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact .contact__wrapper p{
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+}
+
+.contact .contact__wrapper a{
+  font-weight: 600;
+}
+.bg--dark:hover{
+  background: #ffffff;
+  color: #2b2b2b;
+}
+
+@media screen and (max-width:500px) {
+  .contact .contact__wrapper h4{
+      font-size: 2rem;
+      font-weight: 600;
+  }
+
+  .contact .contact__wrapper p{
+      font-size: 1.8rem;
+  }
+  
+}
+/*------footer-------*/
+.footer__wrapper p{
+color: #ffffff;
+}
+.footer .footer__wrapper li{
+  color: #ffffff;
+  padding: 3rem;
+  font-size: 3rem;
+}
+/*-------about----*/
+.aboutme{
+  background: #ffffff;
+  padding: 5rem 0;
+  padding-top: 15rem;
+
+}
+.aboutt{
+  display: center;
+}
+.aboutme .aboutme__text h3{
+  color: #2b2b2b;
+  font-size: 2rem;
+}
+.aboutme .aboutme__wrapper{
+  display: flex;
+  align-items: center;
+}
+.aboutme .aboutme__text h1{
+  color: #ffa700;
+  font-size: 8rem;
+  font-weight: 600;
+}
+.aboutme .aboutme__text p{
+  max-width: 50rem;
+  text-align: justify;
+  margin: 3rem 0;
+}
+.aboutme .aboutme__wrapper .icons ul li{
+padding: 0;
+}
+.aboutme .aboutme__wrapper{
+  display: flex;
+}
+.aboutme .container{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+/*----------trends-------*/
+.recentproj {
+  background: #2b2b2b;
+  padding:5rem 0;
+  padding-top: 5rem;
+}
+.recentproj .recentproj__card {
+  background: #ffffff;
+  border-radius: 2rem;
+}
+
+.recentproj .recentproj__card .recentproj__card_text {
+  margin: 0 2rem;
+}
+
+.recentproj .recentproj__card .recentproj__card_text h4 {
+  color: #ffa700;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.recentproj .recentproj__card .recentproj__card_text p {
+  color: #2b2b2b;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+.recentproj .recentproj__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.recentproj .recentproj__text h2 {
+  color: #ffa700;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.recentproj .recentproj__text p {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+
+.recentproj .recentproj__card img{
+  width: 100%;
+}
+
+.recentproj .recentproj__card_text a {
+  color: #ffa700;
+}
+
+@media screen and (max-width:560px){
+  .recentproj .recentproj__wrapper{
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .recentproj .recentproj__wrapper .recentproj__card{
+    margin: 0 6rem;
+  }
+  .recentproj .recentproj__text {
+    text-align: center;
+  }
+  .recentproj .recentproj__text h2 {
+    font-size: 4rem;
+  }
+  .recentproj .recentproj__text p {
+    font-size: 1.5rem;
+  }
+}
+/*----contract------*/
+.contact{
+  background: #ffa700;
+  padding: 5rem 0;
+}
+
+.contact .contact__wrapper{
+  text-align: center;
+}
+
+.contact .contact__wrapper h4{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact .contact__wrapper p{
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+}
+
+.contact .contact__wrapper a{
+  font-weight: 600;
+}
+.bg--dark:hover{
+  background: #ffffff;
+  color: #2b2b2b;
+}
+
+@media screen and (max-width:500px) {
+  .contact .contact__wrapper h4{
+      font-size: 2rem;
+      font-weight: 600;
+  }
+
+  .contact .contact__wrapper p{
+      font-size: 1.8rem;
+  }
+  
+}
+
+/*------footer-----*/
+.footer{
+  background: #2b2b2b;
+}
+.footer .footer__wrapper li{
+align-items: center;
 }
